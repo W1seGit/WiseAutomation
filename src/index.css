@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+body {
+  margin: auto;
+  background-color: rgb(30, 40, 59);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 100px;
+}
+
+.span-title{
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 3em;
+}
+
+.cps-text{
+  color: #fff;
+  text-align: right;
+  margin-right:50px;
+  font-size: 2em;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.cps-desc{
+  color: #fff;
+  text-align: right;
+  overflow: hidden;
+  margin-right:50px;
+  font-weight: 300;
+  font-size: 20px;
+  margin-left:200px;
+  margin-top: 0;
+}
+
+.cps-wrapper{
+  border-radius: 10px;
+  background-color: rgb(19, 24, 34);
+  width: 650px;
+  height: 150px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.cps-wrapper-2{
+  border-radius: 10px;
+  background-color: rgb(19, 24, 34);
+  width: 650px;
+  height: 150px;
+  overflow: hidden;
+  margin-top: 25px;
+  margin-left: 72px;
+}
+
+#cps{
+  border: 2px solid ; 
+  border-color: rgb(84, 112, 165);
+  background-color: rgb(30, 40, 59);
+  border-radius: 10px;
+  padding: 15px;
+  width: 75px;
+  height: 75px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 50px;
+  outline: none;
+  margin-left: 75px;
+  margin-top: 19px;
+  float:left;
+  text-align: center;
+}
+
+#cps:hover{
+  border-color: rgb(129, 173, 255);
+}
+
+#color-click{
+  border: 2px solid ; 
+  border-color: rgb(84, 112, 165);
+  background-color: rgb(30, 40, 59);
+  border-radius: 10px;
+  padding: 15px;
+  width: 75px;
+  height: 75px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 30px;
+  outline: none;
+  margin-left: 75px;
+  margin-top: 19px;
+  float:left;
+  text-align: center;
+}
+
+#color-click:hover{
+  border-color: rgb(129, 173, 255);
+}
+
+
+.color-desc{
+  color: #fff;
+  text-align: right;
+  overflow: hidden;
+  margin-right:50px;
+  font-weight: 300;
+  font-size: 20px;
+  margin-left:200px;
+  margin-top: 0;
+}
+
+.color-text{
+  color: #fff;
+  text-align: right;
+  margin-right:50px;
+  font-size: 2em;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.nav-bar{
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  position: absolute;
+  position: fixed;
+  width: 50%;
+  height: 75px;
+  bottom:0%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-top-right-radius: 5000px;
+  border-top-left-radius: 5000px;
+  background-color: rgba(61, 54, 54, 0.15);
+  backdrop-filter: blur(5px);
+  margin-left: 25%;
+}
+
+.fa-solid{
+  font-size: 40px;
+}
+
+.toggle{
+  border-right: solid rgba(255, 255, 255, 0.137);
+  padding-right: 20px;
+  border-left: solid rgba(255, 255, 255, 0.137);
+  padding-left: 20px;
+}
+
+.fa-gear{
+  margin-left: 20px;
+  
+}
+
+.fa-gear:hover{
+  color: rgb(129, 173, 255);
+}
+
+.fa-arrow-right-from-bracket{
+  margin-right: 20px;
+  
+}
+
+.fa-arrow-right-from-bracket:hover{
+  color: rgb(129, 173, 255);
+}
+
+.fa-play{
+  
+}
+
+.fa-play:hover{
+  color: rgb(129, 173, 255);
+}
+
+/* Tool Tips */
+
+.quit .tooltip-quit {
+  visibility: hidden;
+  width: 75px;
+  background-color: rgba(29, 173, 255, 0.15);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  color: fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  right: 60%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.quit .tooltip-quit::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(29, 173, 255, 0.15) transparent transparent transparent;
+}
+
+.quit:hover .tooltip-quit {
+  visibility: visible;
+  opacity: 1;
+}
+
+.toggle .tooltip-toggle {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(29, 173, 255, 0.15);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  color: fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.toggle .tooltip-toggle::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(29, 173, 255, 0.15) transparent transparent transparent;
+}
+
+.toggle:hover .tooltip-toggle {
+  visibility: visible;
+  opacity: 1;
+}
+
+.settings .tooltip-settings {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(29, 173, 255, 0.15);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  color: fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 69%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.settings .tooltip-settings::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(29, 173, 255, 0.15) transparent transparent transparent;
+}
+
+.settings:hover .tooltip-settings {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Scroll Bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(30, 40, 59);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(19, 24, 34);
+  border-radius: 10px;
+}
+
